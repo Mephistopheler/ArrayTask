@@ -4,8 +4,6 @@ import java.nio.file.Path;
 import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.arraytask.builder.ArrayBuilder;
-import org.example.arraytask.builder.IntegerArrayBuilder;
 import org.example.arraytask.entity.ArrayWrapper;
 import org.example.arraytask.exception.ArrayTaskException;
 import org.example.arraytask.factory.ArrayFactory;
@@ -39,7 +37,7 @@ public class Main {
                 processLine(line, index, parser, factory, calculationService, sortService);
                 index++;
             }
-            demonstrateBuilder(calculationService);
+
         } catch (ArrayTaskException e) {
             LOGGER.error("Application processing failed", e);
         }
@@ -66,16 +64,7 @@ public class Main {
         }
     }
 
-    private void demonstrateBuilder(ArrayCalculationService calculationService) {
-        ArrayBuilder builder = new IntegerArrayBuilder();
-        ArrayWrapper arrayWrapper = builder.name("builder-array")
-                .addValue(10)
-                .addValue(20)
-                .addValue(30)
-                .build();
-        LOGGER.info("Builder created array: {}", arrayWrapper);
-        LOGGER.info("Builder array sum: {}", calculationService.calculateSum(arrayWrapper));
-    }
+
 
     public static void main(String[] args) {
         Main application = new Main();

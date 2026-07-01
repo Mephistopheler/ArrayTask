@@ -44,3 +44,93 @@
 2026-07-01 19:43:39.455 WARN  org.example.arraytask.Main - Line 6 was skipped: Invalid array data: 1y1 21 32
 2026-07-01 19:43:39.456 INFO  org.example.arraytask.Main - Builder created array: ArrayWrapper{name='builder-array', values=[10, 20, 30]}
 2026-07-01 19:43:39.457 INFO  org.example.arraytask.Main - Builder array sum: Optional[60]
+2026-07-01 19:57:51.864 INFO  org.example.arraytask.reader.ArrayFileReaderImpl - Read 6 lines from data\arrays.txt
+2026-07-01 19:57:51.872 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 19:57:51.873 INFO  org.example.arraytask.Main - Minimum: Optional[1]
+2026-07-01 19:57:51.873 INFO  org.example.arraytask.Main - Maximum: Optional[3]
+2026-07-01 19:57:51.874 INFO  org.example.arraytask.Main - Sum: Optional[6]
+2026-07-01 19:57:51.874 INFO  org.example.arraytask.Main - Average: Optional[2.0]
+2026-07-01 19:57:51.874 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-1
+2026-07-01 19:57:51.875 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 19:57:51.875 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-1
+2026-07-01 19:57:51.875 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 19:57:51.876 WARN  org.example.arraytask.Main - Line 2 was skipped: Invalid array data: 1, 2, x3, 6..5, 77
+2026-07-01 19:57:51.876 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 19:57:51.877 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot find minimum for an empty array
+2026-07-01 19:57:51.878 INFO  org.example.arraytask.Main - Minimum: Optional.empty
+2026-07-01 19:57:51.878 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot find maximum for an empty array
+2026-07-01 19:57:51.878 INFO  org.example.arraytask.Main - Maximum: Optional.empty
+2026-07-01 19:57:51.879 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate sum for an empty array
+2026-07-01 19:57:51.879 INFO  org.example.arraytask.Main - Sum: Optional.empty
+2026-07-01 19:57:51.879 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate sum for an empty array
+2026-07-01 19:57:51.879 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate average for an empty array
+2026-07-01 19:57:51.879 INFO  org.example.arraytask.Main - Average: Optional.empty
+2026-07-01 19:57:51.880 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-3
+2026-07-01 19:57:51.880 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 19:57:51.880 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-3
+2026-07-01 19:57:51.880 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 19:57:51.881 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-4', values=[11, 2, 42]}
+2026-07-01 19:57:51.881 INFO  org.example.arraytask.Main - Minimum: Optional[2]
+2026-07-01 19:57:51.882 INFO  org.example.arraytask.Main - Maximum: Optional[42]
+2026-07-01 19:57:51.882 INFO  org.example.arraytask.Main - Sum: Optional[55]
+2026-07-01 19:57:51.882 INFO  org.example.arraytask.Main - Average: Optional[18.333333333333332]
+2026-07-01 19:57:51.883 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-4
+2026-07-01 19:57:51.883 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-4', values=[2, 11, 42]}
+2026-07-01 19:57:51.884 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-4
+2026-07-01 19:57:51.884 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-4', values=[2, 11, 42]}
+2026-07-01 19:57:51.885 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 19:57:51.885 INFO  org.example.arraytask.Main - Minimum: Optional[3]
+2026-07-01 19:57:51.886 INFO  org.example.arraytask.Main - Maximum: Optional[7]
+2026-07-01 19:57:51.886 INFO  org.example.arraytask.Main - Sum: Optional[14]
+2026-07-01 19:57:51.886 INFO  org.example.arraytask.Main - Average: Optional[4.666666666666667]
+2026-07-01 19:57:51.887 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-5
+2026-07-01 19:57:51.887 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 19:57:51.887 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-5
+2026-07-01 19:57:51.887 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 19:57:51.887 WARN  org.example.arraytask.Main - Line 6 was skipped: Invalid array data: 1y1 21 32
+2026-07-01 19:57:51.889 INFO  org.example.arraytask.Main - Builder created array: ArrayWrapper{name='builder-array', values=[10, 20, 30]}
+2026-07-01 19:57:51.890 INFO  org.example.arraytask.Main - Builder array sum: Optional[60]
+2026-07-01 20:12:52.984 INFO  org.example.arraytask.reader.ArrayFileReaderImpl - Read 6 lines from data\arrays.txt
+2026-07-01 20:12:52.988 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 20:12:52.988 INFO  org.example.arraytask.Main - Minimum: Optional[1]
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.Main - Maximum: Optional[3]
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.Main - Sum: Optional[6]
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.Main - Average: Optional[2.0]
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-1
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-1
+2026-07-01 20:12:52.989 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-1', values=[1, 2, 3]}
+2026-07-01 20:12:52.990 WARN  org.example.arraytask.Main - Line 2 was skipped: Invalid array data: 1, 2, x3, 6..5, 77
+2026-07-01 20:12:52.990 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 20:12:52.990 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot find minimum for an empty array
+2026-07-01 20:12:52.992 INFO  org.example.arraytask.Main - Minimum: Optional.empty
+2026-07-01 20:12:52.992 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot find maximum for an empty array
+2026-07-01 20:12:52.992 INFO  org.example.arraytask.Main - Maximum: Optional.empty
+2026-07-01 20:12:52.992 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate sum for an empty array
+2026-07-01 20:12:52.992 INFO  org.example.arraytask.Main - Sum: Optional.empty
+2026-07-01 20:12:52.992 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate sum for an empty array
+2026-07-01 20:12:52.992 WARN  org.example.arraytask.service.ArrayCalculationServiceImpl - Cannot calculate average for an empty array
+2026-07-01 20:12:52.992 INFO  org.example.arraytask.Main - Average: Optional.empty
+2026-07-01 20:12:52.993 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-3
+2026-07-01 20:12:52.993 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 20:12:52.993 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-3
+2026-07-01 20:12:52.993 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-3', values=[]}
+2026-07-01 20:12:52.993 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-4', values=[11, 2, 42]}
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.Main - Minimum: Optional[2]
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.Main - Maximum: Optional[42]
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.Main - Sum: Optional[55]
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.Main - Average: Optional[18.333333333333332]
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-4
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-4', values=[2, 11, 42]}
+2026-07-01 20:12:52.994 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-4
+2026-07-01 20:12:52.995 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-4', values=[2, 11, 42]}
+2026-07-01 20:12:52.995 INFO  org.example.arraytask.Main - Created array: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 20:12:52.995 INFO  org.example.arraytask.Main - Minimum: Optional[3]
+2026-07-01 20:12:52.995 INFO  org.example.arraytask.Main - Maximum: Optional[7]
+2026-07-01 20:12:52.995 INFO  org.example.arraytask.Main - Sum: Optional[14]
+2026-07-01 20:12:52.996 INFO  org.example.arraytask.Main - Average: Optional[4.666666666666667]
+2026-07-01 20:12:52.996 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with bubble sort: file-array-5
+2026-07-01 20:12:52.996 INFO  org.example.arraytask.Main - Bubble sorted: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 20:12:52.996 INFO  org.example.arraytask.service.ArraySortServiceImpl - Array was sorted with insertion sort: file-array-5
+2026-07-01 20:12:52.996 INFO  org.example.arraytask.Main - Insertion sorted: ArrayWrapper{name='file-array-5', values=[3, 4, 7]}
+2026-07-01 20:12:52.997 WARN  org.example.arraytask.Main - Line 6 was skipped: Invalid array data: 1y1 21 32
