@@ -1,7 +1,7 @@
-package org.example.arrayTask.entity;
+package org.example.arraytask.entity;
 
 
-import org.example.arrayTask.exception.ArrayProcessingException;
+import org.example.arraytask.exception.ArrayTaskException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -43,17 +43,17 @@ public abstract class AbstractArrayWrapper<T extends Number & Comparable<T>> {
         return data.length;
     }
 
-    public abstract double sum() throws ArrayProcessingException;
+    public abstract double sum() throws ArrayTaskException;
 
-    public abstract double average() throws ArrayProcessingException;
+    public abstract double average() throws ArrayTaskException;
 
-    public abstract T findMax() throws ArrayProcessingException;
+    public abstract T findMax() throws ArrayTaskException;
 
-    public abstract T findMin() throws ArrayProcessingException;
+    public abstract T findMin() throws ArrayTaskException;
 
-    protected void ensureNonEmpty() throws ArrayProcessingException {
+    protected void ensureNonEmpty() throws ArrayTaskException {
         if (data.length == 0) {
-            throw new ArrayProcessingException("Array is empty");
+            throw new ArrayTaskException("Array is empty");
         }
     }
 
