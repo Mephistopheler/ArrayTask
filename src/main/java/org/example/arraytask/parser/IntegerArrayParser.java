@@ -18,7 +18,7 @@ public class IntegerArrayParser implements ArrayParser {
             throw new ArrayTaskException("Invalid array data: " + line);
         }
 
-        String trimmedLine = line.trim();
+        String trimmedLine = line.strip();
 
         if (trimmedLine.isEmpty()) {
             return new BigInteger[0];

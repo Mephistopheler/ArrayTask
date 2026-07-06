@@ -2,6 +2,7 @@ package org.example.arraytask.entity;
 
 import java.math.BigInteger;
 import java.util.Arrays;
+import java.util.Objects;
 
 public class ArrayWrapper {
     private final BigInteger[] values;
@@ -30,5 +31,20 @@ public class ArrayWrapper {
     @Override
     public String toString() {
         return "ArrayWrapper{name='" + name + "', values=" + Arrays.toString(values) + "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ArrayWrapper that = (ArrayWrapper) o;
+        return Arrays.equals(values, that.values) && Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(name);
+        result = 31 * result + Arrays.hashCode(values);
+        return result;
     }
 }
