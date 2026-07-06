@@ -2,6 +2,8 @@ package org.example.arraytask.parser;
 
 import org.example.arraytask.exception.ArrayTaskException;
 
+import java.math.BigInteger;
+
 public interface ArrayParser {
-    int[] parse(String line) throws ArrayTaskException;
+    BigInteger[] parse(String line) throws ArrayTaskException;
 }

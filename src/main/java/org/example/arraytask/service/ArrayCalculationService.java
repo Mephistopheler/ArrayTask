@@ -1,14 +1,16 @@
 package org.example.arraytask.service;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Optional;
 import org.example.arraytask.entity.ArrayWrapper;
 
 public interface ArrayCalculationService {
-    Optional<Integer> findMinimum(ArrayWrapper arrayWrapper);
+    Optional<BigInteger> findMinimum(ArrayWrapper arrayWrapper);
 
-    Optional<Integer> findMaximum(ArrayWrapper arrayWrapper);
+    Optional<BigInteger> findMaximum(ArrayWrapper arrayWrapper);
 
-    Optional<Integer> calculateSum(ArrayWrapper arrayWrapper);
+    Optional<BigInteger> calculateSum(ArrayWrapper arrayWrapper);
 
-    Optional<Double> calculateAverage(ArrayWrapper arrayWrapper);
+    Optional<BigDecimal> calculateAverage(ArrayWrapper arrayWrapper);
 }

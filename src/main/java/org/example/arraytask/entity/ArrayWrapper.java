@@ -1,12 +1,13 @@
 package org.example.arraytask.entity;
 
+import java.math.BigInteger;
 import java.util.Arrays;
 
 public class ArrayWrapper {
-    private final int[] values;
+    private final BigInteger[] values;
     private final String name;
 
-    public ArrayWrapper(int[] values, String name) {
+    public ArrayWrapper(BigInteger[] values, String name) {
         if (values == null) {
             throw new IllegalArgumentException("Values cannot be null");
         }
@@ -14,7 +15,7 @@ public class ArrayWrapper {
         this.name = name;
     }
 
-    public int[] getValues() {
+    public BigInteger[] getValues() {
         return Arrays.copyOf(values, values.length);
     }
 
