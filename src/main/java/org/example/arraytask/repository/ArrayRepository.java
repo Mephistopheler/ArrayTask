@@ -10,7 +10,7 @@ import org.example.arraytask.warehouse.ArrayWarehouse;
 import org.example.arraytask.warehouse.ArrayWarehouseUpdater;
 
 public class ArrayRepository {
-    private static final ArrayRepository INSTANCE = new ArrayRepository();
+    private static final ArrayRepository instance = new ArrayRepository();
 
     private final List<ArrayWrapper> arrays = new ArrayList<>();
     private final ArrayWarehouseUpdater warehouseUpdater = new ArrayWarehouseUpdater();
@@ -19,7 +19,7 @@ public class ArrayRepository {
     }
 
     public static ArrayRepository getInstance() {
-        return INSTANCE;
+        return instance;
     }
 
     public boolean add(ArrayWrapper arrayWrapper) {
