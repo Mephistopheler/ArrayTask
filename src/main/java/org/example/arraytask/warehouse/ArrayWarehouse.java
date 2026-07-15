@@ -10,7 +10,7 @@ import org.example.arraytask.service.ArrayCalculationService;
 import org.example.arraytask.service.ArrayCalculationServiceImpl;
 
 public class ArrayWarehouse {
-    private static final ArrayWarehouse INSTANCE = new ArrayWarehouse();
+    private static final ArrayWarehouse instance = new ArrayWarehouse();
 
     private final Map<String, ArrayStatistics> statisticsByName = new HashMap<>();
     private final ArrayCalculationService calculationService = new ArrayCalculationServiceImpl();
@@ -19,7 +19,7 @@ public class ArrayWarehouse {
     }
 
     public static ArrayWarehouse getInstance() {
-        return INSTANCE;
+        return instance;
     }
 
     public void put(ArrayWrapper arrayWrapper) {
