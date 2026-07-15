@@ -12,6 +12,7 @@ public class NameSpecification implements ArraySpecification {
 
     @Override
     public boolean specified(ArrayWrapper arrayWrapper) {
-        return Objects.equals(arrayWrapper.getName(), name);
+        String arrayName = arrayWrapper.getName();
+        return arrayName == null ? name == null : arrayName.equals(name);
     }
 }

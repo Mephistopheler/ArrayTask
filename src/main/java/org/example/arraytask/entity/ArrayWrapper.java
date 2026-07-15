@@ -33,7 +33,10 @@ public class ArrayWrapper {
     }
 
     public void set(int index, BigInteger value) {
-        values[index] = Objects.requireNonNull(value, "Value cannot be null");
+        if (value == null) {
+            throw new NullPointerException("Value cannot be null");
+        }
+        values[index] = value;
         notifyObservers();
     }
 
@@ -72,12 +75,13 @@ public class ArrayWrapper {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ArrayWrapper that = (ArrayWrapper) o;
-        return Arrays.equals(values, that.values) && Objects.equals(name, that.name);
+        return Arrays.equals(values, that.values)
+                && (name == null ? that.name == null : name.equals(that.name));
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(name);
+        int result = name == null ? 0 : name.hashCode();
         result = 31 * result + Arrays.hashCode(values);
         return result;
     }
